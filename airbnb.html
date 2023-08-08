@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>airbnb</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="airbnb.css">
+</head>
+
+<body>
+    
+    <div class="nav">
+        <div class="logo">
+            <img class="airbnbimg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4BfqHaszg76mVmY2qBQIcaCksrpbyaCAnKY60fx2T&s"
+                alt="">
+        </div>
+
+        <div class="searchbar">
+            <div class="searchoption">
+                <button class="anywhere"><a>Anywhere</a></button>
+                <button class="anyweek"><a>Any week </a></button>
+            </div>
+            <div class="searchicon">
+                <button class="addguest"><a>Add guests</a></button>
+                <a href="" class="search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                        style="display:block;fill:none;height:12px;width:12px;stroke:currentColor;stroke-width:5.333333333333333;overflow:visible"
+                        aria-hidden="true" role="presentation" focusable="false">
+                        <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+                    </svg></a>
+            </div>
+        </div>
+        <div class="airbnbdetails">
+            <div class="aboutpage">
+                <button class="airbnbhome"><a>Airbnb your home</a></button>
+                <button class="globalimg"><a><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                        </svg></a>
+                </button>
+            </div>
+            <div class="loginmenu">
+                <button class="registerpage">
+                    <div class="menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                            role="presentation" focusable="false"
+                            style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;">
+                            <g fill="none">
+                                <path d="M2 16h28M2 24h28M2 8h28"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true"
+                            role="presentation" focusable="false"
+                            style="display: block; height: 100%; width: 100%; fill: currentcolor;">
+                            <path
+                                d="M16 .7C7.56.7.7 7.56.7 16S7.56 31.3 16 31.3 31.3 24.44 31.3 16 24.44.7 16 .7zm0 28c-4.02 0-7.6-1.88-9.93-4.81a12.43 12.43 0 0 1 6.45-4.4A6.5 6.5 0 0 1 9.5 14a6.5 6.5 0 0 1 13 0 6.51 6.51 0 0 1-3.02 5.5 12.42 12.42 0 0 1 6.45 4.4A12.67 12.67 0 0 1 16 28.7z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="facility-scroll">
+
+    <div class="facility-container">
+        <div class="amazingpool">
+            <div class="amazing-poolimg">
+                <img src="https://a0.muscache.com/pictures/3fb523a0-b622-4368-8142-b5e03df7549b.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span class="txt">Amazing pool</span>
+            </div>
+        </div>
+        <div class="beachfront">
+            <div class="beach-frontimg">
+                <img src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Beach Front</span>
+            </div>
+        </div>
+        <div class="omg">
+            <div class="omgimg">
+                <img src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>OMG! </span>
+            </div>
+        </div>
+        <div class="topoftheworld">
+            <div class="topoftheworldimg">
+                <img src="https://a0.muscache.com/pictures/248f85bf-e35e-4dc3-a9a1-e1dbff9a3db4.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Top of the world</span>
+            </div>
+        </div>
+        <div class="castles">
+            <div class="castlesimg">
+                <img src="https://a0.muscache.com/pictures/248f85bf-e35e-4dc3-a9a1-e1dbff9a3db4.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Castle</span>
+            </div>
+        </div>
+        <div class="farms">
+            <div class="farmsimg">
+                <img src="https://a0.muscache.com/pictures/aaa02c2d-9f0d-4c41-878a-68c12ec6c6bd.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Farms</span>
+            </div>
+        </div>
+        <div class="amazingviews">
+            <div class="amazingviewsimg">
+                <img src="https://a0.muscache.com/pictures/3b1eb541-46d9-4bef-abc4-c37d77e3c21b.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Amazing views</span>
+            </div>
+        </div>
+
+        <div class="rooms">
+            <div class="roomsimg">
+                <img src="https://a0.muscache.com/pictures/7630c83f-96a8-4232-9a10-0398661e2e6f.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Rooms</span>
+            </div>
+        </div>
+
+        <div class="cabins">
+            <div class="cabinsimg">
+                <img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Cabins</span>
+            </div>
+        </div>
+
+        <div class="trending">
+            <div class="trendingimg">
+                <img src=" https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>trendingname</span>
+            </div>
+        </div>
+
+
+        <div class="tinyhomes">
+            <div class="tinyhomesimg">
+                <img src="https://a0.muscache.com/pictures/35919456-df89-4024-ad50-5fcb7a472df9.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Tiny homes</span>
+            </div>
+        </div>
+        <div class="nationalpark">
+            <div class="nationalparkimg">
+                <img src="https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>National Park</span>
+            </div>
+        </div>
+
+        <div class="countryside">
+            <div class="countrysideimg">
+                <img src="https://a0.muscache.com/pictures/6ad4bd95-f086-437d-97e3-14d12155ddfe.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>country side</span>
+            </div>
+        </div>
+
+
+        <div class="lakefront">
+            <div class="lakefrontimg">
+                <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Lake Front</span>
+            </div>
+        </div>
+        <div class="lakefront">
+            <div class="lakefrontimg">
+                <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Lake Front</span>
+            </div>
+        </div>
+        <div class="lakefront">
+            <div class="lakefrontimg">
+                <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Lake Front</span>
+            </div>
+        </div>
+        <div class="lakefront">
+            <div class="lakefrontimg">
+                <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Lake Front</span>
+            </div>
+        </div>
+        <div class="lakefront">
+            <div class="lakefrontimg">
+                <img src="https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg" alt=""
+                    class="scrollimages">
+            </div>
+            <div class="textimg">
+                <span>Lake Front</span>
+            </div>
+        </div>
+            
+            </div>
+            
+
+                <div class="facility-filter">
+                    <button class="facilityfilterbutton">
+                    <div class="facility-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" style="display:block;height:14px;width:14px;fill:currentColor" aria-hidden="true" role="presentation" focusable="false"><path d="M5 8a3 3 0 0 1 2.83 2H14v2H7.83A3 3 0 1 1 5 8zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm6-8a3 3 0 1 1-2.83 4H2V4h6.17A3 3 0 0 1 11 2zm0 2a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
+                    </div>
+                    <div class="facility-text">
+                        <span>Filter</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+
+        <div class="totalpricedetails">
+            <div class="displayprice">
+                <span>Display total price</span>
+            </div>
+        
+        <div class="taxdetails">
+        <div class="allfees">
+            <span>Includes all fees,before taxes</span>
+            </div>
+            <div class="pricetoggleprice">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+            </div>
+            
+        </div>
+
+        </div>
+            
+            <div class="main-container">
+                <div class="staycard">
+                        <div class="container">
+                            <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                            </svg>
+                            <div class="flex">
+                                <div class="location"><strong>Meppadi, India</strong></div>
+                                <div class="ratings"><span>&starf;</span> 5.0</div>
+                            </div>
+                            <div class="distance">
+                            480 kilometers away
+                            </div>
+                            <div class="duration">
+                            7-12 Aug
+                            </div>
+                            <div class="price">&#8377;<strong>5,706</strong> night</div>
+                        </div>
+
+                        <div class="container">
+                            <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                            </svg>
+                            <div class="flex">
+                                <div class="location"><strong>Meppadi, India</strong></div>
+                                <div class="ratings"><span>&starf;</span> 5.0</div>
+                            </div>
+                            <div class="distance">
+                            480 kilometers away
+                            </div>
+                            <div class="duration">
+                            7-12 Aug
+                            </div>
+                            <div class="price">&#8377;<strong>5,706</strong> night</div>
+                        </div>
+
+                        <div class="container">
+                            <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                            </svg>
+                            <div class="flex">
+                                <div class="location"><strong>Meppadi, India</strong></div>
+                                <div class="ratings"><span>&starf;</span> 5.0</div>
+                            </div>
+                            <div class="distance">
+                            480 kilometers away
+                            </div>
+                            <div class="duration">
+                            7-12 Aug
+                            </div>
+                            <div class="price">&#8377;<strong>5,706</strong> night</div>
+                        </div>
+
+                        <div class="container">
+                            <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                            </svg>
+                            <div class="flex">
+                                <div class="location"><strong>Meppadi, India</strong></div>
+                                <div class="ratings"><span>&starf;</span> 5.0</div>
+                            </div>
+                            <div class="distance">
+                            480 kilometers away
+                            </div>
+                            <div class="duration">
+                            7-12 Aug
+                            </div>
+                            <div class="price">&#8377;<strong>5,706</strong> night</div>
+                        </div>
+                </div>
+
+
+                <div class="staycard">
+                    <div class="container">
+                        <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg>
+                        <div class="flex">
+                            <div class="location"><strong>Meppadi, India</strong></div>
+                            <div class="ratings"><span>&starf;</span> 5.0</div>
+                        </div>
+                        <div class="distance">
+                        480 kilometers away
+                        </div>
+                        <div class="duration">
+                        7-12 Aug
+                        </div>
+                        <div class="price">&#8377;<strong>5,706</strong> night</div>
+                    </div>
+
+                    <div class="container">
+                        <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg>
+                        <div class="flex">
+                            <div class="location"><strong>Meppadi, India</strong></div>
+                            <div class="ratings"><span>&starf;</span> 5.0</div>
+                        </div>
+                        <div class="distance">
+                        480 kilometers away
+                        </div>
+                        <div class="duration">
+                        7-12 Aug
+                        </div>
+                        <div class="price">&#8377;<strong>5,706</strong> night</div>
+                    </div>
+
+                    <div class="container">
+                        <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg>
+                        <div class="flex">
+                            <div class="location"><strong>Meppadi, India</strong></div>
+                            <div class="ratings"><span>&starf;</span> 5.0</div>
+                        </div>
+                        <div class="distance">
+                        480 kilometers away
+                        </div>
+                        <div class="duration">
+                        7-12 Aug
+                        </div>
+                        <div class="price">&#8377;<strong>5,706</strong> night</div>
+                    </div>
+
+                    <div class="container">
+                        <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                        </svg>
+                        <div class="flex">
+                            <div class="location"><strong>Meppadi, India</strong></div>
+                            <div class="ratings"><span>&starf;</span> 5.0</div>
+                        </div>
+                        <div class="distance">
+                        480 kilometers away
+                        </div>
+                        <div class="duration">
+                        7-12 Aug
+                        </div>
+                        <div class="price">&#8377;<strong>5,706</strong> night</div>
+                    </div>
+            </div>
+
+
+
+            <div class="staycard">
+                <div class="container">
+                    <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <div class="flex">
+                        <div class="location"><strong>Meppadi, India</strong></div>
+                        <div class="ratings"><span>&starf;</span> 5.0</div>
+                    </div>
+                    <div class="distance">
+                    480 kilometers away
+                    </div>
+                    <div class="duration">
+                    7-12 Aug
+                    </div>
+                    <div class="price">&#8377;<strong>5,706</strong> night</div>
+                </div>
+
+                <div class="container">
+                    <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <div class="flex">
+                        <div class="location"><strong>Meppadi, India</strong></div>
+                        <div class="ratings"><span>&starf;</span> 5.0</div>
+                    </div>
+                    <div class="distance">
+                    480 kilometers away
+                    </div>
+                    <div class="duration">
+                    7-12 Aug
+                    </div>
+                    <div class="price">&#8377;<strong>5,706</strong> night</div>
+                </div>
+
+                <div class="container">
+                    <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <div class="flex">
+                        <div class="location"><strong>Meppadi, India</strong></div>
+                        <div class="ratings"><span>&starf;</span> 5.0</div>
+                    </div>
+                    <div class="distance">
+                    480 kilometers away
+                    </div>
+                    <div class="duration">
+                    7-12 Aug
+                    </div>
+                    <div class="price">&#8377;<strong>5,706</strong> night</div>
+                </div>
+
+                <div class="container">
+                    <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <div class="flex">
+                        <div class="location"><strong>Meppadi, India</strong></div>
+                        <div class="ratings"><span>&starf;</span> 5.0</div>
+                    </div>
+                    <div class="distance">
+                    480 kilometers away
+                    </div>
+                    <div class="duration">
+                    7-12 Aug
+                    </div>
+                    <div class="price">&#8377;<strong>5,706</strong> night</div>
+                </div>
+             </div>
+
+
+             <div class="staycard">
+                <div class="container">
+                    <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <div class="flex">
+                        <div class="location"><strong>Meppadi, India</strong></div>
+                        <div class="ratings"><span>&starf;</span> 5.0</div>
+                    </div>
+                    <div class="distance">
+                    480 kilometers away
+                    </div>
+                    <div class="duration">
+                    7-12 Aug
+                    </div>
+                    <div class="price">&#8377;<strong>5,706</strong> night</div>
+                </div>
+
+                <div class="container">
+                    <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <div class="flex">
+                        <div class="location"><strong>Meppadi, India</strong></div>
+                        <div class="ratings"><span>&starf;</span> 5.0</div>
+                    </div>
+                    <div class="distance">
+                    480 kilometers away
+                    </div>
+                    <div class="duration">
+                    7-12 Aug
+                    </div>
+                    <div class="price">&#8377;<strong>5,706</strong> night</div>
+                </div>
+
+                <div class="container">
+                    <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <div class="flex">
+                        <div class="location"><strong>Meppadi, India</strong></div>
+                        <div class="ratings"><span>&starf;</span> 5.0</div>
+                    </div>
+                    <div class="distance">
+                    480 kilometers away
+                    </div>
+                    <div class="duration">
+                    7-12 Aug
+                    </div>
+                    <div class="price">&#8377;<strong>5,706</strong> night</div>
+                </div>
+
+                <div class="container">
+                    <img class="houseimg" src="https://images.unsplash.com/photo-1501183638710-841dd1904471?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="grey" class="bi-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    </svg>
+                    <div class="flex">
+                        <div class="location"><strong>Meppadi, India</strong></div>
+                        <div class="ratings"><span>&starf;</span> 5.0</div>
+                    </div>
+                    <div class="distance">
+                    480 kilometers away
+                    </div>
+                    <div class="duration">
+                    7-12 Aug
+                    </div>
+                    <div class="price">&#8377;<strong>5,706</strong> night</div>
+                </div>
+             </div>
+        </div>
+        
+        
+
+
+        
+
+
+
+
+</body>
+
+</html>
